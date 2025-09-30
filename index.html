@@ -1,1 +1,483 @@
-<p>Hello World</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Axion - Smart University Life Planning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navigation">
+        <nav class="container">
+            <div class="navigation-content">
+                <a href="index.html" class="navigation-brand">
+                    Project Axion
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="navigation-menu">
+                    <a href="index.html" class="navigation-link active">Home</a>
+                    <a href="features.html" class="navigation-link">Features</a>
+                    <a href="about.html" class="navigation-link">About</a>
+                    <a href="contact.html" class="navigation-link">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobileMenuToggle" class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="mobile-menu">
+                <div class="mobile-menu-content">
+                    <a href="index.html" class="mobile-menu-link active">Home</a>
+                    <a href="features.html" class="mobile-menu-link">Features</a>
+                    <a href="about.html" class="mobile-menu-link">About</a>
+                    <a href="contact.html" class="mobile-menu-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Background Elements -->
+        <div class="hero-background"></div>
+        <div class="hero-decoration hero-decoration-1"></div>
+        <div class="hero-decoration hero-decoration-2"></div>
+        <div class="hero-decoration hero-decoration-3"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <!-- Badge -->
+                <div class="hero-badge">
+                    <i class="fas fa-graduation-cap hero-badge-icon"></i>
+                    Trusted by 10,000+ Students
+                </div>
+                
+                <!-- Main Heading -->
+                <h1 class="hero-title">
+                    <span class="gradient-text-primary">
+                        Project Axion
+                    </span>
+                </h1>
+                
+                <!-- Subtitle -->
+                <p class="hero-subtitle">
+                    The ultimate platform for <span class="gradient-text-secondary">smart university life planning</span>
+                </p>
+                
+                <!-- Description -->
+                <p class="hero-description">
+                    Plan your perfect university day with real-time information about events, dining menus, 
+                    campus traffic, and study spaces. Make informed decisions with community-driven insights.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="hero-cta">
+                    <a href="features.html" class="cta-button-primary">
+                        <span>Get Started Free</span>
+                    </a>
+                    <a href="about.html" class="cta-button-secondary">
+                        Learn More
+                    </a>
+                </div>
+                
+                <!-- Stats -->
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number primary">10K+</div>
+                        <div class="stat-label">Active Students</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number secondary">50+</div>
+                        <div class="stat-label">Universities</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number accent">1M+</div>
+                        <div class="stat-label">Events Shared</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white" id="features">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="section-title">
+                    Everything You Need for
+                    <span class="gradient-text-secondary">Campus Life</span>
+                </h2>
+                <p class="section-subtitle">
+                    Powerful features designed to make your university experience seamless and informed
+                </p>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-card-content">
+                        <div class="feature-icon primary">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Event Calendar</h3>
+                        <p class="feature-description">
+                            Access comprehensive calendars of school events and club activities. Never miss important dates or exciting campus happenings.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-card-content">
+                        <div class="feature-icon secondary">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="feature-title">Dining Hall Menu</h3>
+                        <p class="feature-description">
+                            Check real-time dining hall menus to decide whether to visit the cafeteria. Know what's available before you go.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-card-content">
+                        <div class="feature-icon accent">
+                            <i class="fas fa-traffic-light"></i>
+                        </div>
+                        <h3 class="feature-title">Campus Traffic</h3>
+                        <p class="feature-description">
+                            Stay updated on campus traffic conditions to plan your routes efficiently and avoid delays.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-card-content">
+                        <div class="feature-icon white">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <h3 class="feature-title">Room Booking</h3>
+                        <p class="feature-description">
+                            Book study rooms and spaces easily. Find and reserve the perfect spot for your study sessions.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-card-content">
+                        <div class="feature-icon blue">
+                            <i class="fas fa-upload"></i>
+                        </div>
+                        <h3 class="feature-title">Community Uploads</h3>
+                        <p class="feature-description">
+                            Students can upload event information, menu items, and other campus updates for everyone to access.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-card-content">
+                        <div class="feature-icon orange">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Mobile Friendly</h3>
+                        <p class="feature-description">
+                            Access all features on any device. Plan your day on the go with our responsive design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="section-title">
+                    How It <span class="gradient-text-secondary">Works</span>
+                </h2>
+                <p class="section-subtitle">
+                    Get started in minutes and transform your university experience
+                </p>
+            </div>
+            
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-item">
+                    <div class="step-number">
+                        <div class="step-circle primary">
+                            <span class="step-number-text">1</span>
+                        </div>
+                        <div class="step-check accent">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Sign Up</h3>
+                    <p class="step-description">
+                        Create your account and verify your university email to get started.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-item">
+                    <div class="step-number">
+                        <div class="step-circle secondary">
+                            <span class="step-number-text">2</span>
+                        </div>
+                        <div class="step-check primary">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Explore</h3>
+                    <p class="step-description">
+                        Browse events, check dining menus, view traffic updates, and find study rooms.
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step-item">
+                    <div class="step-number">
+                        <div class="step-circle accent">
+                            <span class="step-number-text">3</span>
+                        </div>
+                        <div class="step-check secondary">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Contribute</h3>
+                    <p class="step-description">
+                        Upload event information, menu items, or other campus updates to help fellow students.
+                    </p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="step-item">
+                    <div class="step-number">
+                        <div class="step-circle white">
+                            <span class="step-number-text">4</span>
+                        </div>
+                        <div class="step-check accent">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Plan</h3>
+                    <p class="step-description">
+                        Make informed decisions about your day using real-time, community-driven information.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community-section" id="upload">
+        <div class="container">
+            <div class="community-grid">
+                <div class="community-content">
+                    <h2 class="section-title">
+                        Community-Driven
+                        <span class="gradient-text-secondary">Information</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Project Axion thrives on community contributions. Students can upload and share valuable campus information that benefits everyone.
+                    </p>
+                    
+                    <div class="community-features">
+                        <div class="community-feature">
+                            <div class="community-feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="community-feature-text">Upload event details with time slots</span>
+                        </div>
+                        <div class="community-feature">
+                            <div class="community-feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="community-feature-text">Share dining hall menu items</span>
+                        </div>
+                        <div class="community-feature">
+                            <div class="community-feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="community-feature-text">Report campus traffic conditions</span>
+                        </div>
+                        <div class="community-feature">
+                            <div class="community-feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="community-feature-text">Add study room availability</span>
+                        </div>
+                        <div class="community-feature">
+                            <div class="community-feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="community-feature-text">Verify and moderate content</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="community-card">
+                        <div class="community-card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="community-card-title">Join the Community</h3>
+                        <p class="community-card-description">
+                            Help build a comprehensive database of campus information that makes everyone's university experience better.
+                        </p>
+                    </div>
+                    
+                    <!-- Floating elements -->
+                    <div class="community-decoration community-decoration-1"></div>
+                    <div class="community-decoration community-decoration-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section">
+        <!-- Background Elements -->
+        <div class="cta-background"></div>
+        <div class="cta-decoration cta-decoration-1"></div>
+        <div class="cta-decoration cta-decoration-2"></div>
+        <div class="cta-decoration cta-decoration-3"></div>
+        
+        <div class="cta-content">
+            <h2 class="cta-title">
+                Ready to Transform Your
+                <span class="block">University Experience?</span>
+            </h2>
+            <p class="cta-description">
+                Join thousands of students who are already using Project Axion to plan their perfect campus day.
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="contact.html" class="cta-button-white">
+                    <span>Get Started Free</span>
+                </a>
+                <a href="about.html" class="cta-button-outline">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <h3>Project Axion</h3>
+                    <p>
+                        Smart University Life Planning platform that helps students make informed decisions about their campus life.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Project Axion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobileMenu').classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

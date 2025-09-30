@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Project Axion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navigation">
+        <nav class="container">
+            <div class="navigation-content">
+                <a href="index.html" class="navigation-brand">
+                    Project Axion
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="navigation-menu">
+                    <a href="index.html" class="navigation-link">Home</a>
+                    <a href="features.html" class="navigation-link">Features</a>
+                    <a href="about.html" class="navigation-link">About</a>
+                    <a href="contact.html" class="navigation-link active">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobileMenuToggle" class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="mobile-menu">
+                <div class="mobile-menu-content">
+                    <a href="index.html" class="mobile-menu-link">Home</a>
+                    <a href="features.html" class="mobile-menu-link">Features</a>
+                    <a href="about.html" class="mobile-menu-link">About</a>
+                    <a href="contact.html" class="mobile-menu-link active">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <!-- Page Hero -->
+            <div class="page-hero">
+                <h1 class="hero-title">
+                    <span class="gradient-text-primary">
+                        Get in Touch
+                    </span>
+                </h1>
+                <p class="hero-description">
+                    Have questions, suggestions, or want to get involved? We'd love to hear from you!
+                </p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="two-column">
+                <div class="two-column-content">
+                    <h2 class="two-column-title">
+                        Contact <span class="gradient-text-secondary">Information</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        We're here to help and always excited to hear from students who want to improve their university experience. Whether you have questions about using Project Axion, suggestions for new features, or want to contribute to our community, don't hesitate to reach out.
+                    </p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon primary">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>contact@projectaxion.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon secondary">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon accent">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>University Innovation Hub, Campus Center, Room 205</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon white">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Hours</h4>
+                                <p>Monday - Friday, 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h3>Follow Us</h3>
+                        <div class="contact-social-links">
+                            <a href="#" class="contact-social-link facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="contact-social-link twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="contact-social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="contact-social-link linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 class="contact-form-title">Send us a Message</h3>
+                    <form id="contactForm" class="contact-form-fields">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" required class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="university" class="form-label">University</label>
+                            <input type="text" id="university" name="university" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" required class="form-select">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="feature">Feature Request</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" required rows="4" placeholder="Tell us how we can help you..." class="form-textarea"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-button-primary">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2 class="section-title">
+                    Frequently Asked <span class="gradient-text-secondary">Questions</span>
+                </h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-content">
+                            <div class="faq-icon primary">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <h3 class="faq-title">How do I get started?</h3>
+                            <p class="faq-description">
+                                Simply sign up with your university email address and start exploring! You can immediately access all features and begin contributing to the community.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-content">
+                            <div class="faq-icon secondary">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="faq-title">Is my information secure?</h3>
+                            <p class="faq-description">
+                                Yes! We take privacy seriously. All data is encrypted and we never share your personal information with third parties without your consent.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-content">
+                            <div class="faq-icon accent">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="faq-title">Is there a mobile app?</h3>
+                            <p class="faq-description">
+                                Our website is fully responsive and works great on mobile devices. We're also working on dedicated mobile apps for iOS and Android.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-content">
+                            <div class="faq-icon white">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="faq-title">How can I contribute?</h3>
+                            <p class="faq-description">
+                                You can upload event information, share dining hall menus, report traffic conditions, and add study room availability. Every contribution helps the community!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-content">
+                            <div class="faq-icon blue">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h3 class="faq-title">Is this available at my university?</h3>
+                            <p class="faq-description">
+                                We're constantly expanding to new universities. Contact us to request Project Axion at your campus or check if we're already available there.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-content">
+                            <div class="faq-icon orange">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3 class="faq-title">Need technical support?</h3>
+                            <p class="faq-description">
+                                Our support team is here to help! Contact us through this form or email us directly at support@projectaxion.com for technical assistance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <!-- Background Elements -->
+                <div class="cta-background"></div>
+                <div class="cta-decoration cta-decoration-1"></div>
+                <div class="cta-decoration cta-decoration-2"></div>
+                <div class="cta-decoration cta-decoration-3"></div>
+                
+                <div class="cta-content">
+                    <h2 class="cta-title">
+                        Ready to Join
+                        <span class="block">Project Axion?</span>
+                    </h2>
+                    <p class="cta-description">
+                        Start planning your perfect university day today. Join thousands of students who are already using Project Axion.
+                    </p>
+                    
+                    <div class="cta-buttons">
+                        <a href="#" class="cta-button-white">
+                            <span>Sign Up Now</span>
+                        </a>
+                        <a href="features.html" class="cta-button-outline">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <h3>Project Axion</h3>
+                    <p>
+                        Smart University Life Planning platform that helps students make informed decisions about their campus life.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Project Axion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobileMenu').classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Simple validation
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+            this.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
