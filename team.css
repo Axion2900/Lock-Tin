@@ -96,7 +96,7 @@ header.navigation {
 ========================== */
 .navigation-content p {
     background: #ffffff;
-    color: #333;
+    color: #ae00ff;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -121,4 +121,40 @@ header.navigation {
     .navigation-content p {
         font-size: 0.95rem;
     }
+}
+
+/* ==========================
+   Animations
+========================== */
+body {
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+
+body.page-loaded {
+    opacity: 1;
+}
+
+.quote-box {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #0d1117;
+    color: #ee00ff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 320px;
+    text-align: center;
+    opacity: 0;
+}
+
+.fade-in {
+    animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
