@@ -29,11 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
 // Quote Rotator
 // ===============
 const quotes = [
-    "“Success is the sum of small efforts, repeated day in and day out.” – R. Collier",
-    "“Don’t watch the clock; do what it does. Keep going.” – Sam Levenson",
-    "“Discipline is the bridge between goals and accomplishment.” – Jim Rohn",
+    "“A dream doesn't become reality through magic; it takes sweat, determination and hard work.” – Colin Powell",
+    "“The price of success is hard work, dedication to the job at hand.” – Vince Lombardi",
+    "“Talent is cheap; dedication is expensive. It will cost you your life.” – Irving Stone",
     "“Strive for progress, not perfection.”",
+    "“Hard work beats talent when talent doesn't work hard.” – Tim Notke",
     "“The secret to getting ahead is getting started.” – Mark Twain",
+    "“There's no shame in being weak. Shame is in staying weak.” – Black Clover",
 ];
 
 let quoteIndex = 0;
@@ -49,7 +51,7 @@ function showQuote() {
     quoteIndex = (quoteIndex + 1) % quotes.length;
 }
 
-setInterval(showQuote, 5000); // every 5 seconds
+setInterval(showQuote, 10000); // every 10 seconds
 showQuote(); // initial quote
 
 // ===============
