@@ -1,8 +1,11 @@
+import { languageService } from '../scripts/i18n/languageService.js';
+
 // Navigation Component - Minimal JS, uses HTML template
 class AppNavigation extends HTMLElement {
   constructor() {
     super();
     this.isMenuOpen = false;
+    this.updateTranslations = this.updateTranslations.bind(this);
   }
 
   async connectedCallback() {
@@ -26,8 +29,15 @@ class AppNavigation extends HTMLElement {
       }
     });
 
-    // Only JS needed for interactive functionality
+    // Subscribe to language changes
+    languageService.subscribe(this.updateTranslations);
+    
+    // Initial translation
+    this.updateTranslations();
+
+    // Setup interactive functionality
     this.setupMenuToggle();
+    this.setupLanguageToggle();
   }
 
   setupMenuToggle() {
@@ -52,6 +62,47 @@ class AppNavigation extends HTMLElement {
         burgerMenu.setAttribute('aria-expanded', 'false');
       });
     });
+  }
+
+  setupLanguageToggle() {
+    const langToggle = this.querySelector('.language-toggle');
+    langToggle?.addEventListener('click', () => {
+      languageService.toggleLanguage();
+    });
+  }
+
+  updateTranslations() {
+    // Update navigation links
+    const homeLink = this.querySelector('[data-page="home"]');
+    const featuresLink = this.querySelector('[data-page="features"]');
+    const pricingLink = this.querySelector('[data-page="pricing"]');
+    const teamLink = this.querySelector('[data-page="team"]');
+    const langToggle = this.querySelector('.language-toggle');
+    const heroBadge = this.querySelector('.hero-badge');
+
+    if (homeLink) {
+      homeLink.textContent = languageService.translate('nav.home');
+
+    }
+    if (featuresLink) {
+      featuresLink.textContent = languageService.translate('nav.features');
+    }
+    if (pricingLink) {
+      pricingLink.textContent = languageService.translate('nav.pricing');
+    }
+    if (teamLink) {
+      teamLink.textContent = languageService.translate('nav.team');
+    }
+    if (langToggle) {
+      langToggle.textContent = languageService.translate('nav.language');
+    }
+    if (heroBadge) {
+      heroBadge.textContent = languageService.translate('hero.badge');  
+    }
+  }
+
+  disconnectedCallback() {
+    languageService.unsubscribe(this.updateTranslations);
   }
 }
 

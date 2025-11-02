@@ -72,6 +72,21 @@
   gap: 1rem;
 }
 
+.language-toggle {
+  background: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.language-toggle:hover {
+  background: #1d4ed8;
+}
+
 .burger-menu {
   display: none;
   flex-direction: column;

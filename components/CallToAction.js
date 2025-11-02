@@ -11,8 +11,36 @@ class AppCTA extends HTMLElement {
     // Clone and append
     this.appendChild(template.content.cloneNode(true));
 
-    // Minimal event handling - only if needed for actual functionality
-    // For now, these are just placeholders
+    // Subscribe to language changes
+    languageService.subscribe(this.updateTranslations);
+    
+    // Initial translation
+    this.updateTranslations();
+  }
+
+  updateTranslations() {
+    // Vision section
+    const visionTitle = this.querySelector('.vision-content h2');
+    const visionDescription = this.querySelector('.vision-description');
+
+    // CTA section
+    const ctaTitle = this.querySelector('.cta-card h2');
+    const ctaSubtitle = this.querySelector('.cta-card p');
+    const createAccountBtn = this.querySelector('.cta-card-primary');
+    const watchDemoBtn = this.querySelector('.cta-card-secondary');
+
+    // Update content
+    if (visionTitle) visionTitle.textContent = languageService.translate('cta.title');
+    if (visionDescription) visionDescription.textContent = languageService.translate('cta.description');
+    
+    if (ctaTitle) ctaTitle.textContent = languageService.translate('cta.join.title');
+    if (ctaSubtitle) ctaSubtitle.textContent = languageService.translate('cta.join.subtitle');
+    if (createAccountBtn) createAccountBtn.textContent = languageService.translate('cta.button.create');
+    if (watchDemoBtn) watchDemoBtn.textContent = languageService.translate('cta.button.demo');
+  }
+
+  disconnectedCallback() {
+    languageService.unsubscribe(this.updateTranslations);
   }
 }
 
