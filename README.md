@@ -8,7 +8,7 @@ Lock-Tin is a website designed to help univeristy students plan their days using
 
 Created: September 23, 2025
 
-Last Updated: September 23, 2025
+Last Updated: November 2, 2025
 
 ### Axion team members
 

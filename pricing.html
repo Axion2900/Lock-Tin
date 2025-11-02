@@ -17,18 +17,18 @@ Last Updated: 2025-11-01
     <link rel="stylesheet" href="/styles/Home.css">
   </head>
   <body>
-    <app-navigation current-page="pricing"></app-navigation>
+    <navigation-bar current-page="pricing"></navigation-bar>
     
     <div class="page-container">
       <section class="info-section">
         <div class="container">
           <div class="info-content">
             <div class="info-icon">💰</div>
-            <h1 class="info-title">Pricing Details Coming Soon</h1>
-            <p class="info-description">
+            <h1 class="info-title" data-i18n="pricing.title">Pricing Details Coming Soon</h1>
+            <p class="info-description" data-i18n="pricing.description">
               We are working hard to finalize our pricing plans and will share them with you shortly. Stay tuned for updates!
             </p>
-            <a href="/index.html" class="back-home-btn">← Back to Home</a>
+            <a href="/index.html" class="back-home-btn" data-i18n="pricing.backHome">← Back to Home</a>
           </div>
         </div>
       </section>
@@ -37,8 +37,11 @@ Last Updated: 2025-11-01
     <!-- Quote Rotator -->
     <quote-rotator></quote-rotator>
     
+    <!-- Translation Handler (load first) -->
+    <script type="module" src="/scripts/i18n/domTranslator.js"></script>
+    
     <!-- Web Components -->
-    <script type="module" src="/components/Navigation.js"></script>
+    <script type="module" src="/components/NavigationBar.js"></script>
     <script type="module" src="/components/QuoteRotator.js"></script>
     
     <!-- Typewriter Effect -->

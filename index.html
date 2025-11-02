@@ -18,22 +18,25 @@ Last Updated: 2025-11-01
     <link rel="stylesheet" href="/styles/Home.css">
   </head>
   <body>
-    <app-navigation current-page="home"></app-navigation>
+    <navigation-bar current-page="home"></navigation-bar>
     <div class="home-card">
-      <app-hero></app-hero>
-      <app-features></app-features>
-      <app-cta></app-cta>
+      <home-hero></home-hero>
+      <home-features></home-features>
+      <home-cta></home-cta>
     </div>
     
     <!-- Quote Rotator -->
     <quote-rotator></quote-rotator>
     
+    <!-- Translation Handler (load first) -->
+    <script type="module" src="/scripts/i18n/domTranslator.js"></script>
+    
     <!-- Web Components -->
-    <script type="module" src="/components/Navigation.js"></script>
-    <script type="module" src="/components/Hero.js"></script>
+    <script type="module" src="/components/NavigationBar.js"></script>
+    <script type="module" src="/components/HomeHero.js"></script>
     <script type="module" src="/components/FeatureCard.js"></script>
-    <script type="module" src="/components/Features.js"></script>
-    <script type="module" src="/components/CallToAction.js"></script>
+    <script type="module" src="/components/HomeFeatures.js"></script>
+    <script type="module" src="/components/HomeCTA.js"></script>
     <script type="module" src="/components/QuoteRotator.js"></script>
     
     <!-- Typewriter Effect -->

@@ -20,36 +20,21 @@ class QuoteRotator extends HTMLElement {
     }
 
     async connectedCallback() {
-        await this.loadTemplate();
-        this.render();
+        const response = await fetch('/components/QuoteRotator.html');
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const template = doc.querySelector('template');
+        
+        if (template) {
+            this.shadowRoot.appendChild(template.content.cloneNode(true));
+        }
+        
         this.startRotation();
     }
 
     disconnectedCallback() {
-        if (this.intervalId) {
-            clearInterval(this.intervalId);
-        }
-    }
-
-    async loadTemplate() {
-        try {
-            const response = await fetch('/components/QuoteRotator.html');
-            const text = await response.text();
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(text, 'text/html');
-            const template = doc.querySelector('template');
-            
-            if (template) {
-                const content = template.content.cloneNode(true);
-                this.shadowRoot.appendChild(content);
-            }
-        } catch (error) {
-            console.error('Failed to load QuoteRotator template:', error);
-        }
-    }
-
-    render() {
-        // Template is already loaded in loadTemplate()
+        if (this.intervalId) clearInterval(this.intervalId);
     }
 
     showQuote() {

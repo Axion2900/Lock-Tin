@@ -1,45 +1,47 @@
-// Reusable Feature Card Component - Minimal JS, uses HTML template
-class FeatureCard extends HTMLElement {
-  async connectedCallback() {
-    // Load template
-    const response = await fetch('/components/FeatureCard.html');
-    const html = await response.text();
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const template = doc.querySelector('#feature-card-template');
+import { languageService } from '../scripts/i18n/languageService.js';
+import { BaseComponent } from './BaseComponent.js';
+// one of the more complicated components
+class FeatureCard extends BaseComponent {
+  async loadTemplate() {
+    await super.loadTemplate();
     
-    // Clone template
-    const content = template.content.cloneNode(true);
+    this.querySelector('.feature-card-large')?.classList.add(this.getAttribute('card-class') || 'feature-card-1');
+    this.querySelector('[data-slot="icon"]').textContent = this.getAttribute('icon') || '📱';
     
-    // Populate from attributes
-    const cardClass = this.getAttribute('card-class') || 'feature-card-1';
-    content.querySelector('.feature-card-large').classList.add(cardClass);
-    content.querySelector('[data-slot="icon"]').textContent = this.getAttribute('icon') || '📱';
-    content.querySelector('[data-slot="title"]').textContent = this.getAttribute('title') || 'Feature';
-    content.querySelector('[data-slot="description"]').textContent = this.getAttribute('description') || '';
+    this.titleEl = this.querySelector('[data-slot="title"]');
+    this.descEl = this.querySelector('[data-slot="description"]');
+    this.featuresList = this.querySelector('[data-slot="features"]');
     
-    // Handle features list
-    const features = this.getAttribute('features') || '';
-    const featuresList = content.querySelector('[data-slot="features"]');
-    if (features) {
-      features.split('|').filter(f => f.trim()).forEach(feature => {
-        const li = document.createElement('li');
-        li.textContent = feature.trim();
-        featuresList.appendChild(li);
-      });
-    }
+    this.titleKey = this.getAttribute('title') || 'Feature';
+    this.descKey = this.getAttribute('description') || '';
+    this.featuresKey = this.getAttribute('features') || '';
     
-    this.appendChild(content);
+    this.updateContent();
     
-    // Minimal event handling
+    this.featuresKey.split('|').filter(f => f.trim()).forEach(key => {
+      const li = document.createElement('li');
+      li.dataset.key = key.trim();
+      li.textContent = languageService.translate(key.trim());
+      this.featuresList.appendChild(li);
+    });
+  }
+  
+  onReady() {
+    languageService.subscribe(() => this.updateContent());
+    
     this.querySelector('.card-btn')?.addEventListener('click', () => {
       this.dispatchEvent(new CustomEvent('feature-click', {
         bubbles: true,
-        detail: { 
-          title: this.getAttribute('title'),
-          description: this.getAttribute('description')
-        }
+        detail: { title: this.titleKey, description: this.descKey }
       }));
+    });
+  }
+  
+  updateContent() {
+    if (this.titleEl) this.titleEl.textContent = languageService.translate(this.titleKey);
+    if (this.descEl) this.descEl.textContent = languageService.translate(this.descKey);
+    this.featuresList?.querySelectorAll('li').forEach(li => {
+      if (li.dataset.key) li.textContent = languageService.translate(li.dataset.key);
     });
   }
 }

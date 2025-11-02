@@ -17,14 +17,14 @@ Last Updated: 2025-11-01
     <link rel="stylesheet" href="/styles/Home.css">
   </head>
   <body>
-    <app-navigation current-page="features"></app-navigation>
+    <navigation-bar current-page="features"></navigation-bar>
     
     <div class="page-container">
       <section class="full-features-section">
         <div class="container">
           <div class="full-features-header">
-            <h1 class="full-features-title">All Features</h1>
-            <p class="full-features-subtitle">Discover everything Lock-Tin has to offer to enhance your campus life</p>
+            <h1 class="full-features-title" data-i18n="features.page.title">All Features</h1>
+            <p class="full-features-subtitle" data-i18n="features.page.subtitle">Discover everything Lock-Tin has to offer to enhance your campus life</p>
           </div>
 
           <div class="card-features-grid">
@@ -105,8 +105,11 @@ Last Updated: 2025-11-01
     <!-- Quote Rotator -->
     <quote-rotator></quote-rotator>
     
+    <!-- Translation Handler (load first) -->
+    <script type="module" src="/scripts/i18n/domTranslator.js"></script>
+    
     <!-- Web Components -->
-    <script type="module" src="/components/Navigation.js"></script>
+    <script type="module" src="/components/NavigationBar.js"></script>
     <script type="module" src="/components/FeatureCard.js"></script>
     <script type="module" src="/components/QuoteRotator.js"></script>
     
