@@ -1,49 +1,138 @@
 <!--
 Team Page
-By: Xavier Malara, Daniel Shan
+By: Xavier Malara, Daniel Shan, Waaberi Ibrahim
 Created: 2025-09-30
-Last Updated: 2025-10-21
+Last Updated: 2025-11-01
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Page</title>
-    <link rel="stylesheet" href="team.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="navigation">
-        <nav class="container">
-            <div class="navigation-content">
-                <h1>
-                    Lock-Tin - Team Page
-                </h1>
-                
-                <!-- Desktop Navigation -->
-                <div class="navigation-menu">
-                    <a href="index.html" class="navigation-link">Home Page</a>
-                    <a href="features.html" class="navigation-link">Product Features</a>
-                    <a href="pricing.html" class="navigation-link">Pricing</a>
-                    <a href="team.html" class="navigation-link active">Team Page</a>
-                </div>
-                
-                <h1>
-                    Meet the Axion Team
-                </h1>
-                <hr>
-                <h3>
-                    Daniel Shan, <br>
-                    Waaberi Ibrahim, <br>
-                    Xavier Malara, <br>
-                    Carter Mcmillan, <br>
-                    Nathan Ng, <br>
-                    Karman Samra
-                </h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team - Lock-Tin</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/Navigation.css">
+    <link rel="stylesheet" href="/styles/Home.css">
+  </head>
+  <body>
+    <app-navigation current-page="team"></app-navigation>
+    
+    <div class="page-container">
+      <section class="team-section">
+        <div class="container">
+          <h1 class="team-title">Meet the Axion Team</h1>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-avatar">DS</div>
+              <h3 class="team-name">Daniel Shan</h3>
             </div>
-        </nav>
-    </header>
-    <script src="team.js"></script>
-</body>
+            
+            <div class="team-card">
+              <div class="team-avatar">WI</div>
+              <h3 class="team-name">Waaberi Ibrahim</h3>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-avatar">XM</div>
+              <h3 class="team-name">Xavier Malara</h3>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-avatar">CM</div>
+              <h3 class="team-name">Carter Mcmillan</h3>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-avatar">NN</div>
+              <h3 class="team-name">Nathan Ng</h3>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-avatar">KS</div>
+              <h3 class="team-name">Karman Samra</h3>
+            </div>
+          </div>
+          <a href="/index.html" class="back-home-btn">← Back to Home</a>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Quote Rotator -->
+    <quote-rotator></quote-rotator>
+    
+    <!-- Web Components -->
+    <script type="module" src="/components/Navigation.js"></script>
+    <script type="module" src="/components/QuoteRotator.js"></script>
+    
+    <!-- Typewriter Effect -->
+    <script type="module" src="/scripts/Typewriter.js"></script>
+  </body>
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team - Lock-Tin</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/Navigation.css">
+    <link rel="stylesheet" href="/styles/Home.css">
+  </head>
+  <body>
+    <app-navigation current-page="team"></app-navigation>
+    
+    <div class="page-container">
+      <section class="team-section">
+        <div class="container">
+          <h1 class="team-title">Meet the Axion Team</h1>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-avatar">DS</div>
+              <h3 class="team-name">Daniel Shan</h3>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-avatar">WI</div>
+              <h3 class="team-name">Waaberi Ibrahim</h3>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-avatar">XM</div>
+              <h3 class="team-name">Xavier Malara</h3>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-avatar">CM</div>
+              <h3 class="team-name">Carter Mcmillan</h3>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-avatar">NN</div>
+              <h3 class="team-name">Nathan Ng</h3>
+            </div>
+            
+            <div class="team-card">
+              <div class="team-avatar">KS</div>
+              <h3 class="team-name">Karman Samra</h3>
+            </div>
+          </div>
+          <a href="/index.html" class="back-home-btn">← Back to Home</a>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Quote Rotator -->
+    <quote-rotator></quote-rotator>
+    
+    <!-- Web Components -->
+    <script type="module" src="/components/Navigation.js"></script>
+    <script type="module" src="/components/QuoteRotator.js"></script>
+    
+    <!-- Typewriter Effect -->
+    <script type="module" src="/scripts/Typewriter.js"></script>
+  </body>
 </html>

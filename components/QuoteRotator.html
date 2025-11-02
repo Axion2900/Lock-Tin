@@ -1,0 +1,50 @@
+<template id="quote-rotator-template">
+    <style>
+        .quote-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-width: 350px;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1.6;
+            z-index: 1000;
+            opacity: 0;
+            animation: fadeIn 0.6s ease-in forwards;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .quote-box.fade-in {
+            animation: fadeIn 0.6s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .quote-box {
+                bottom: 15px;
+                right: 15px;
+                left: 15px;
+                max-width: none;
+                font-size: 13px;
+                padding: 15px 20px;
+            }
+        }
+    </style>
+    <div class="quote-box"></div>
+</template>

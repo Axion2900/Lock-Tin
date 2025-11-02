@@ -1,59 +1,116 @@
 <!--
 Product Features Page
-By: Xavier Malara, Daniel Shan
+By: Xavier Malara, Daniel Shan, Waaberi Ibrahim
 Created: 2025-09-30
-Last Updated: 2025-10-21
+Last Updated: 2025-11-01
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Features</title>
-    <link rel="stylesheet" href="features.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="navigation">
-        <nav class="container">
-            <div class="navigation-content">
-                <h1>
-                    Lock-Tin - Product Features
-                </h1>
-                <!-- Desktop Navigation -->
-                <div class="navigation-menu">
-                    <a href="index.html" class="navigation-link">Home Page</a>
-                    <a href="features.html" class="navigation-link active">Product Features</a>
-                    <a href="pricing.html" class="navigation-link">Pricing</a>
-                    <a href="team.html" class="navigation-link">Team Page</a>
-                </div>
-                <h3 
-                    class="feature-header-title">Event Calendar
-                </h3>
-                <p>
-                    Never miss important campus events again with our comprehensive event calendar system. Access real-time information about school events, club activities, and social gatherings all in one place.
-                    <br>
-                    View all school and club events in one calendar
-                    <br>
-                    Filter events by category, date, or location
-                    <br>
-                    Check what's available at the dining hall before you go. Our real-time menu system helps you decide whether to visit the cafeteria based on what's actually being served.
-                    <br>
-                    Navigate campus efficiently with real-time traffic updates. Avoid delays and plan your routes based on current campus conditions and construction updates.
-                    <br>
-                    Contribute to the community by uploading valuable campus information. Help fellow students by sharing event details, menu items, traffic updates, and other useful campus data.
-                    <br>
-                    Share dining hall menu items and photo
-                    <br>
-                    Upload event information with time slots
-                    <br>
-                    Report campus traffic conditions
-                    <br>
-                    Earn points for helpful contributions
-                    <br>
-                </p>
-            </div>
-    </header>
-    <script src="features.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features - Lock-Tin</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/Navigation.css">
+    <link rel="stylesheet" href="/styles/Home.css">
+  </head>
+  <body>
+    <app-navigation current-page="features"></app-navigation>
+    
+    <div class="page-container">
+      <section class="full-features-section">
+        <div class="container">
+          <div class="full-features-header">
+            <h1 class="full-features-title">All Features</h1>
+            <p class="full-features-subtitle">Discover everything Lock-Tin has to offer to enhance your campus life</p>
+          </div>
+
+          <div class="card-features-grid">
+            <feature-card
+              icon="📅"
+              title="Event Calendar"
+              description="Never miss important campus events again with our comprehensive event calendar system. Access real-time information about school events, club activities, and social gatherings all in one place."
+              card-class="feature-card-1"
+              features="View all school and club events in one calendar|Filter events by category, date, or location|Set personalized reminders|Sync with your device calendar|RSVP and track attendance|Share events with friends">
+            </feature-card>
+
+            <feature-card
+              icon="🍽️"
+              title="Dining Hall Menu"
+              description="Check what's available at the dining hall before you go. Our real-time menu system helps you decide whether to visit the cafeteria based on what's actually being served."
+              card-class="feature-card-2"
+              features="Real-time menu updates with photos|Dietary restriction filters (vegan, gluten-free, etc.)|Student ratings & reviews|Nutritional information|Save favorite meals|Get notified when favorites are served">
+            </feature-card>
+
+            <feature-card
+              icon="🚗"
+              title="Campus Traffic"
+              description="Navigate campus efficiently with real-time traffic updates. Avoid delays and plan your routes based on current campus conditions and construction updates."
+              card-class="feature-card-3"
+              features="Live traffic conditions|Construction alerts & detours|Parking availability updates|Smart route optimization|Walking time estimates|Bus schedule integration">
+            </feature-card>
+
+            <feature-card
+              icon="👥"
+              title="Community Contributions"
+              description="Contribute to the community by uploading valuable campus information. Help fellow students by sharing event details, menu items, traffic updates, and other useful campus data."
+              card-class="feature-card-4"
+              features="Share dining hall menu items and photos|Upload event information with time slots|Report campus traffic conditions|Earn points for helpful contributions|Level up your contributor status|Redeem rewards">
+            </feature-card>
+
+            <feature-card
+              icon="🔔"
+              title="Smart Notifications"
+              description="Stay informed with intelligent notifications that learn your preferences and schedule. Get alerts about events, menu updates, and traffic conditions that matter to you."
+              card-class="feature-card-5"
+              features="Personalized event reminders|Favorite meal alerts|Traffic delay warnings|Custom notification schedules|Do not disturb modes|Smart notification filtering">
+            </feature-card>
+
+            <feature-card
+              icon="🎓"
+              title="Study Groups & Meetups"
+              description="Find study partners and organize meetups for your courses. Connect with classmates, form study groups, and coordinate meeting times and locations."
+              card-class="feature-card-6"
+              features="Find study partners by course|Create and join study groups|Schedule group meetings|Share study materials|Rate study locations|Integrated chat functionality">
+            </feature-card>
+
+            <feature-card
+              icon="🏋️"
+              title="Campus Facilities"
+              description="Check availability and wait times for campus facilities like gyms, libraries, and computer labs. Plan your visits during off-peak hours for the best experience."
+              card-class="feature-card-7"
+              features="Real-time gym occupancy|Library seat availability|Computer lab status|Equipment availability|Reserve facilities in advance|Facility hour updates">
+            </feature-card>
+
+            <feature-card
+              icon="🎯"
+              title="Personalized Dashboard"
+              description="Your customizable home base for all campus information. See what matters most to you at a glance with widgets and shortcuts to your favorite features."
+              card-class="feature-card-8"
+              features="Customizable widget layout|Quick access shortcuts|Today's schedule overview|Upcoming events feed|Recent notifications|Favorite locations">
+            </feature-card>
+          </div>
+
+          <div class="features-cta">
+            <h2>Ready to transform your campus experience?</h2>
+            <p>Join thousands of students already using Lock-Tin</p>
+            <a href="/index.html" class="cta-card-primary">Back to Home</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Quote Rotator -->
+    <quote-rotator></quote-rotator>
+    
+    <!-- Web Components -->
+    <script type="module" src="/components/Navigation.js"></script>
+    <script type="module" src="/components/FeatureCard.js"></script>
+    <script type="module" src="/components/QuoteRotator.js"></script>
+    
+    <!-- Typewriter Effect -->
+    <script type="module" src="/scripts/Typewriter.js"></script>
+  </body>
 </html>

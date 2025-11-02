@@ -1,0 +1,140 @@
+.navigation {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.navigation-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 0;
+}
+
+.navigation-menu {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.navigation-link:hover {
+  color: #2563eb;
+}
+
+.navigation-link.active {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+
+.design-switcher-btn {
+  background: #2563eb;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.design-switcher-btn:hover {
+  background: #1d4ed8;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 101;
+}
+
+.burger-line {
+  width: 25px;
+  height: 3px;
+  background: #2563eb;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.burger-line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .navigation-content {
+    flex-wrap: wrap;
+  }
+
+  .navigation-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navigation-menu.open {
+    display: flex;
+  }
+
+  .navigation-link {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .navigation-link:last-child {
+    border-bottom: none;
+  }
+}

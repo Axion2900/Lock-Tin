@@ -1,42 +1,47 @@
 <!--
 Pricing Page
-By: Xavier Malara, Daniel Shan
+By: Xavier Malara, Daniel Shan, Waaberi Ibrahim
 Created: 2025-09-30
-Last Updated: 2025-10-21
+Last Updated: 2025-11-01
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing </title>
-    <link rel="stylesheet" href="pricing.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="navigation">
-        <nav class="container">
-            <div class="navigation-content">
-                <h1>
-                    Lock-Tin - Pricing
-                </h1>
-                
-                <!-- Desktop Navigation -->
-                <div class="navigation-menu">
-                    <a href="index.html" class="navigation-link">Home Page</a>
-                    <a href="features.html" class="navigation-link">Product Features</a>
-                    <a href="pricing.html" class="navigation-link active">Pricing</a>
-                    <a href="team.html" class="navigation-link">Team Page</a>
-                </div>
-                <h4>
-                    Pricing details will be available soon.
-                </h4>
-                <p>
-                    We are working hard to finalize our pricing plans and will share them with you shortly. Stay tuned for updates!
-                </p>
-            </div>
-        </nav>
-    </header>
-    <script src="pricing.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing - Lock-Tin</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/Navigation.css">
+    <link rel="stylesheet" href="/styles/Home.css">
+  </head>
+  <body>
+    <app-navigation current-page="pricing"></app-navigation>
+    
+    <div class="page-container">
+      <section class="info-section">
+        <div class="container">
+          <div class="info-content">
+            <div class="info-icon">💰</div>
+            <h1 class="info-title">Pricing Details Coming Soon</h1>
+            <p class="info-description">
+              We are working hard to finalize our pricing plans and will share them with you shortly. Stay tuned for updates!
+            </p>
+            <a href="/index.html" class="back-home-btn">← Back to Home</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Quote Rotator -->
+    <quote-rotator></quote-rotator>
+    
+    <!-- Web Components -->
+    <script type="module" src="/components/Navigation.js"></script>
+    <script type="module" src="/components/QuoteRotator.js"></script>
+    
+    <!-- Typewriter Effect -->
+    <script type="module" src="/scripts/Typewriter.js"></script>
+  </body>
 </html>
