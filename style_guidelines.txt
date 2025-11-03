@@ -1,6 +1,8 @@
 LOCK-TIN STYLE GUIDELINES
 
-Last Updated: November 2, 2025
+
+Authors: Waaberi Ibrahim, Dan Shan
+Last Updated: November 3, 2025
 
 COLORS
 
@@ -10,6 +12,25 @@ Backgrounds: #0a0a0a (main), #0f0f0f (sections), #ffffff (nav)
 
 Main Gradient: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #8b5cf6 100%)
 Text Gradient: linear-gradient(135deg, #3b82f6, #8b5cf6) + background-clip: text
+
+COMMENTS & DOCUMENTATION
+
+Begin each file with:
+
+/* [FileName]
+   Author(s): [Name/Team]
+   Date Created: [Date]
+   Last updated: [Date]
+   Purpose: [Short description]
+*/
+
+For components, include a short usage example in a comment at the top
+
+DARK MODE
+
+Prefer dark backgrounds (#0a0a0a, #0f0f0f) with light text (#f1f5f9)
+Use prefers-color-scheme: dark media query for automatic theme switching
+Keep contrast ≥ 4.5:1 for accessibility
 
 TYPOGRAPHY
 
