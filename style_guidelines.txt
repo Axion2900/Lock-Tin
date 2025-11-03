@@ -1,0 +1,53 @@
+LOCK-TIN STYLE GUIDELINES
+
+Last Updated: November 2, 2025
+
+COLORS
+
+Primary: #1e3a8a, #3b82f6, #2563eb (blues)
+Accent: #8b5cf6 (purple)
+Backgrounds: #0a0a0a (main), #0f0f0f (sections), #ffffff (nav)
+
+Main Gradient: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #8b5cf6 100%)
+Text Gradient: linear-gradient(135deg, #3b82f6, #8b5cf6) + background-clip: text
+
+TYPOGRAPHY
+
+Font: 'Inter', system fallbacks
+Hero Title: 6rem (mobile: 3.5rem), weight: 900
+Section Titles: 3-4rem (mobile: 2rem), weight: 900
+Body: 1-1.3rem, line-height: 1.6-1.8
+
+LAYOUT
+
+Container: max-width: 1200px, padding: 0 2rem
+Section Padding: 5rem 0
+Grids: repeat(auto-fit, minmax(250-450px, 1fr)), gap: 2rem
+Mobile Breakpoint: @media (max-width: 768px)
+
+COMPONENTS
+
+Structure: Web Components with templates + JavaScript classes
+Pattern: <section class="section-name"><div class="container">...</div></section>
+i18n: data-i18n="section.key" on all user-facing text
+Naming: Component-prefixed (.card-, .hero-, .navigation-)
+
+EFFECTS
+
+Transitions: transition: all 0.3s
+Hover: transform: translateY(-5px to -10px)
+Shadows: box-shadow: 0 10-20px 30-40px rgba(...)
+Glass: backdrop-filter: blur(10px) + rgba backgrounds
+Button Hover: translateY(-3px) + increased shadow
+
+RESPONSIVENESS
+
+Desktop: Full grids, horizontal nav
+Mobile (≤768px): Stacked grids, burger menu, reduced font sizes
+
+FILE LAYOUT
+
+styles/index.css: Global resets, base styles
+styles/Navigation.css: Nav bar, mobile menu
+styles/Home.css: Page-specific styles, media queries
+components/: [Name].html + [Name].js pairs
