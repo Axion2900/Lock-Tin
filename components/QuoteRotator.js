@@ -20,7 +20,7 @@ class QuoteRotator extends HTMLElement {
     }
 
     async connectedCallback() {
-        const response = await fetch('/components/QuoteRotator.html');
+        const response = await fetch('./components/QuoteRotator.html');
         const html = await response.text();
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, 'text/html');

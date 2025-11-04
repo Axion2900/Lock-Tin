@@ -8,7 +8,7 @@ export class BaseComponent extends HTMLElement {
   async loadTemplate() {
     const fileName = this.constructor.name;
     
-    const response = await fetch(`/components/${fileName}.html`);
+    const response = await fetch(`./components/${fileName}.html`);
     const html = await response.text();
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
