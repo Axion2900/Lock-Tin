@@ -41,8 +41,11 @@ export const translations = {
         'features.page.subtitle': 'Discover everything Lock-Tin has to offer to enhance your campus life',
 
         // Pricing Page
-        'pricing.title': 'Pricing Details Coming Soon',
-        'pricing.description': 'We are working hard to finalize our pricing plans and will share them with you shortly. Stay tuned for updates!',
+        'pricing.title': 'Pricing Details',
+        'pricing.description': '2 month free trial available!',
+        'pricing.subscription.monthly': 'Monthly Subscription Plan: $4.00 per month for full access to all features and updates after free trial.',
+        'pricing.subscription.semester': 'Semester Subscription Plan (Save 12%): $14.00 per semester (4 months) for full access to all features and updates after free trial.',
+        'pricing.subscription.lifetime': 'Lifetime Plan: One-time payment of $99.99 for unlimited access to all current and future features.',
         'pricing.backHome': '← Back to Home',
 
         // Team Page
@@ -90,9 +93,13 @@ export const translations = {
         'features.page.subtitle': 'Découvrez tout ce que Lock-Tin a à offrir pour améliorer votre vie universitaire',
 
         // Pricing Page
-        'pricing.title': 'Détails de prix Bientôt Disponibles',
-        'pricing.description': 'Nous travaillons dur pour finaliser nos plans de tarification et les partagerons avec vous sous peu. Restez à l\'écoute pour les mises à jour!',
-        'pricing.backHome': '← Retour à l\'Accueil',
+        'pricing.title': 'Détails des tarifs',
+        'pricing.description': 'Essai gratuit de 2 mois disponible !',
+        'pricing.subscription.monthly': 'Abonnement mensuel : 4,00 $ par mois pour un accès complet à toutes les fonctionnalités et mises à jour après la période d’essai.',
+        'pricing.subscription.semester': 'Abonnement semestriel (économisez 12 %) : 14,00 $ par semestre (4 mois) pour un accès complet à toutes les fonctionnalités et mises à jour après la période d’essai.',
+        'pricing.subscription.lifetime': 'Forfait à vie : paiement unique de 99,99 $ pour un accès illimité à toutes les fonctionnalités actuelles et futures.',
+        'pricing.backHome': '← Retour à l’accueil',
+
 
         // Team Page
         'team.title': 'Rencontrez l\'Équipe Axion',
