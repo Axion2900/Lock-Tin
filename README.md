@@ -15,7 +15,6 @@ Last Updated: November 2, 2025
 Dan Shan<br>
 Waaberi Ibrahim<br>
 Xavier Malara<br>
-Carter Mcmillan<br>
 Nathan Ng<br>
 Karman Samra<br>
 
