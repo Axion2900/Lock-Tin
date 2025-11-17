@@ -15,8 +15,7 @@ class TranslationHandler {
       mutations.forEach((mutation) => {
         mutation.addedNodes.forEach((node) => {
           if (node.nodeType === Node.ELEMENT_NODE) {
-            const elements = [node, ...node.querySelectorAll('[data-i18n]')];
-            elements.forEach(element => this.translateElement(element));
+            this.translateElement(node);
           }
         });
       });
@@ -42,12 +41,20 @@ class TranslationHandler {
   }
 
   translateElement(element) {
-    const key = element.getAttribute('data-i18n');
-    if (!key || element.dataset.i18nTranslated === 'true') return;
-
-    const translation = languageService.translate(key);
-    element.textContent = translation;
-    element.dataset.i18nTranslated = 'true';
+    // Translate the element itself if it has data-i18n
+    if (element.hasAttribute('data-i18n')) {
+      const key = element.getAttribute('data-i18n');
+      const translation = languageService.translate(key);
+      element.textContent = translation;
+    }
+    
+    // Translate all children with data-i18n
+    const children = element.querySelectorAll('[data-i18n]');
+    children.forEach(child => {
+      const key = child.getAttribute('data-i18n');
+      const translation = languageService.translate(key);
+      child.textContent = translation;
+    });
   }
 
   destroy() {
