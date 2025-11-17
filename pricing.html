@@ -2,7 +2,7 @@
 Pricing Page
 By: Xavier Malara, Daniel Shan, Waaberi Ibrahim
 Created: 2025-09-30
-Last Updated: 2025-11-01
+Last Updated: 2025-11-16
 -->
 <!doctype html>
 <html lang="en">
@@ -14,22 +14,63 @@ Last Updated: 2025-11-01
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/Navigation.css">
-    <link rel="stylesheet" href="./styles/Home.css">
+    <link rel="stylesheet" href="./styles/Pricing.css">
   </head>
   <body>
     <navigation-bar current-page="pricing"></navigation-bar>
     
     <div class="page-container">
-      <section class="info-section">
+      <section class="pricing-section">
         <div class="container">
-          <div class="info-content">
-            <div class="info-icon">💰</div>
-            <h1 class="info-title" data-i18n="pricing.title">Pricing Details</h1>
-            <p class="info-description" data-i18n="pricing.description"></p>
-            <p class="info-description" data-i18n="pricing.subscription.monthly"></p>
-            <p class="info-description" data-i18n="pricing.subscription.semester"></p>
-            <p class="info-description" data-i18n="pricing.subscription.lifetime"></p>
-              <a href="/index.html" class="back-home-btn" data-i18n="pricing.backHome">← Back to Home</a>
+          <div class="pricing-title-container">
+            <h1 class="pricing-title" data-i18n="pricing.title">Find the perfect plan</h1>
+            <p class="pricing-subtitle" data-i18n="pricing.description">
+              Start for free, then unlock premium features with a plan that fits your academic journey.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <!-- Free Trial Card -->
+            <div class="pricing-card">
+              <h3 class="pricing-card-title" data-i18n="pricing.free.title">Free Trial</h3>
+              <p class="pricing-card-price" data-i18n="pricing.free.price">C$0</p>
+              <p class="pricing-card-per-month" data-i18n="pricing.free.duration">14 days</p>
+              <ul class="pricing-features">
+                <li data-i18n="pricing.feature.basic">Basic feature access</li>
+                <li data-i18n="pricing.feature.limited">Limited daily use</li>
+                <li data-i18n="pricing.feature.community">Community support</li>
+              </ul>
+              <a href="#" class="pricing-cta-btn" data-i18n="pricing.free.cta">Start Trial</a>
+            </div>
+
+            <!-- Semester Card -->
+            <div class="pricing-card popular">
+              <span class="popular-badge" data-i18n="pricing.popular">MOST POPULAR</span>
+              <h3 class="pricing-card-title" data-i18n="pricing.semester.title">Semester</h3>
+              <p class="pricing-card-price" data-i18n="pricing.semester.price">C$20</p>
+              <p class="pricing-card-per-month" data-i18n="pricing.semester.monthly">≈ C$5/month</p>
+              <ul class="pricing-features">
+                <li data-i18n="pricing.feature.full">Full feature access</li>
+                <li data-i18n="pricing.feature.unlimited">Unlimited daily use</li>
+                <li data-i18n="pricing.feature.priority">Priority support</li>
+                <li data-i18n="pricing.feature.early">Early access to new features</li>
+              </ul>
+              <a href="#" class="pricing-cta-btn" data-i18n="pricing.semester.cta">Get Started</a>
+            </div>
+
+            <!-- Lifetime Card -->
+            <div class="pricing-card">
+              <h3 class="pricing-card-title" data-i18n="pricing.lifetime.title">Lifetime</h3>
+              <p class="pricing-card-price" data-i18n="pricing.lifetime.price">C$60</p>
+              <p class="pricing-card-per-month" data-i18n="pricing.lifetime.monthly">Pay once, own it forever</p>
+              <ul class="pricing-features">
+                <li data-i18n="pricing.feature.full">Full feature access</li>
+                <li data-i18n="pricing.feature.unlimited">Unlimited daily use</li>
+                <li data-i18n="pricing.feature.priority">Priority support</li>
+                <li data-i18n="pricing.feature.lifetime">Lifetime updates</li>
+              </ul>
+              <a href="#" class="pricing-cta-btn" data-i18n="pricing.lifetime.cta">Go Lifetime</a>
+            </div>
           </div>
         </div>
       </section>

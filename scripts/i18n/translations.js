@@ -41,12 +41,33 @@ export const translations = {
         'features.page.subtitle': 'Discover everything Lock-Tin has to offer to enhance your campus life',
 
         // Pricing Page
-        'pricing.title': 'Pricing Details',
-        'pricing.description': '2 month free trial available!',
-        'pricing.subscription.monthly': 'Monthly Subscription Plan: $4.00 per month for full access to all features and updates after free trial.',
-        'pricing.subscription.semester': 'Semester Subscription Plan (Save 12%): $14.00 per semester (4 months) for full access to all features and updates after free trial.',
-        'pricing.subscription.lifetime': 'Lifetime Plan: One-time payment of $99.99 for unlimited access to all current and future features.',
-        'pricing.backHome': '← Back to Home',
+        'pricing.title': 'Find the perfect plan',
+        'pricing.description': 'Start for free, then unlock premium features with a plan that fits your academic journey.',
+        'pricing.popular': 'MOST POPULAR',
+
+        'pricing.free.title': 'Free Trial',
+        'pricing.free.price': 'C$0',
+        'pricing.free.duration': '14 days',
+        'pricing.free.cta': 'Start Trial',
+
+        'pricing.semester.title': 'Semester',
+        'pricing.semester.price': 'C$20',
+        'pricing.semester.monthly': '≈ C$5/month',
+        'pricing.semester.cta': 'Get Started',
+
+        'pricing.lifetime.title': 'Lifetime',
+        'pricing.lifetime.price': 'C$60',
+        'pricing.lifetime.monthly': 'Pay once, own it forever',
+        'pricing.lifetime.cta': 'Go Lifetime',
+
+        'pricing.feature.basic': 'Basic feature access',
+        'pricing.feature.limited': 'Limited daily use',
+        'pricing.feature.community': 'Community support',
+        'pricing.feature.full': 'Full feature access',
+        'pricing.feature.unlimited': 'Unlimited daily use',
+        'pricing.feature.priority': 'Priority support',
+        'pricing.feature.early': 'Early access to new features',
+        'pricing.feature.lifetime': 'Lifetime updates',
 
         // Team Page
         'team.title': 'Meet the Axion Team',
@@ -93,13 +114,33 @@ export const translations = {
         'features.page.subtitle': 'Découvrez tout ce que Lock-Tin a à offrir pour améliorer votre vie universitaire',
 
         // Pricing Page
-        'pricing.title': 'Détails des tarifs',
-        'pricing.description': 'Essai gratuit de 2 mois disponible !',
-        'pricing.subscription.monthly': 'Abonnement mensuel : 4,00 $ par mois pour un accès complet à toutes les fonctionnalités et mises à jour après la période d’essai.',
-        'pricing.subscription.semester': 'Abonnement semestriel (économisez 12 %) : 14,00 $ par semestre (4 mois) pour un accès complet à toutes les fonctionnalités et mises à jour après la période d’essai.',
-        'pricing.subscription.lifetime': 'Forfait à vie : paiement unique de 99,99 $ pour un accès illimité à toutes les fonctionnalités actuelles et futures.',
-        'pricing.backHome': '← Retour à l’accueil',
+        'pricing.title': 'Trouvez le plan parfait',
+        'pricing.description': 'Commencez gratuitement, puis débloquez des fonctionnalités premium avec un plan adapté à votre parcours académique.',
+        'pricing.popular': 'LE PLUS POPULAIRE',
 
+        'pricing.free.title': 'Essai Gratuit',
+        'pricing.free.price': '0 $C',
+        'pricing.free.duration': '14 jours',
+        'pricing.free.cta': 'Commencer l\'essai',
+
+        'pricing.semester.title': 'Semestre',
+        'pricing.semester.price': '20 $C',
+        'pricing.semester.monthly': '≈ 5 $C/mois',
+        'pricing.semester.cta': 'Commencer',
+
+        'pricing.lifetime.title': 'À Vie',
+        'pricing.lifetime.price': '60 $C',
+        'pricing.lifetime.monthly': 'Payez une fois, possédez-le pour toujours',
+        'pricing.lifetime.cta': 'Passer à la version à vie',
+
+        'pricing.feature.basic': 'Accès aux fonctionnalités de base',
+        'pricing.feature.limited': 'Utilisation quotidienne limitée',
+        'pricing.feature.community': 'Support communautaire',
+        'pricing.feature.full': 'Accès complet aux fonctionnalités',
+        'pricing.feature.unlimited': 'Utilisation quotidienne illimitée',
+        'pricing.feature.priority': 'Support prioritaire',
+        'pricing.feature.early': 'Accès anticipé aux nouvelles fonctionnalités',
+        'pricing.feature.lifetime': 'Mises à jour à vie',
 
         // Team Page
         'team.title': 'Rencontrez l\'Équipe Axion',
